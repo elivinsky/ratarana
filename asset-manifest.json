@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ratarana/static/css/main.29b0015f.css",
+    "main.js": "/ratarana/static/js/main.63a471ba.js",
+    "static/media/rata.jpg": "/ratarana/static/media/rata.5ae6593bdd7bf75b2e25.jpg",
+    "static/media/rana.jpg": "/ratarana/static/media/rana.4b9679dcb8ffac1a1f0f.jpg",
+    "index.html": "/ratarana/index.html",
+    "main.29b0015f.css.map": "/ratarana/static/css/main.29b0015f.css.map",
+    "main.63a471ba.js.map": "/ratarana/static/js/main.63a471ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29b0015f.css",
+    "static/js/main.63a471ba.js"
+  ]
+}
