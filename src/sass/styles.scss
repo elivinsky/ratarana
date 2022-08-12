@@ -1,27 +1,79 @@
 @import "~bootstrap/scss/bootstrap";
 
-.videoContainer {
-  position: relative;
-  width: 640px;
-  height: 480px;
-  margin: 0 auto;
-  
-  .video {
-    width: 640px;
-    height: 480px;
-  }
+html, body, #root {
+  margin: 0;
+  background: $dark;
+  overflow: auto;
 
-  .videoOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
+  height: 100vh;
+  height: unquote('calc(100vh - env(safe-area-inset-bottom))');
+  height: -webkit-fill-available;
+  height: unquote('calc(-webkit-fill-available - env(safe-area-inset-bottom))');
+}
 
-  .videoLoader {
-    background-color: red;
-    z-index: 2;
-  }
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  color: $text-muted;
+  padding: 5px 0 15px;
+  border-top: 1px solid $text-muted;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.loader {
+  background: $dark;
+  color: $light;
+  z-index: 20;
+}
+
+.top-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 10;
+}
+
+.bottom-actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mirrored {
+  transform: scaleX(-1);
 }

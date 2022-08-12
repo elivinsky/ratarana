@@ -1,21 +1,11 @@
-import { Col, Container, Row } from 'react-bootstrap';
+import React from 'react';
 
 import Camera from './Camera';
 
 const App = () => (
-  <Container className="text-center">
-    <Row>
-      <Col>Header</Col>
-    </Row>
-    <Row>
-      <Col>
-        <Camera />
-      </Col>
-    </Row>
-    <Row>
-      <Col>Footer</Col>
-    </Row>
-  </Container>
+  <div className="text-center flex-fill d-flex align-items-center">
+    <Camera />
+  </div>
 );
 
 export default App;
