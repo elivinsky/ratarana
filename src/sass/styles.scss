@@ -1,9 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 
+html {
+  overflow: auto;
+}
+
 html, body, #root {
   margin: 0;
   background: $dark;
-  overflow: auto;
 
   height: 100vh;
   height: unquote('calc(100vh - env(safe-area-inset-bottom))');
